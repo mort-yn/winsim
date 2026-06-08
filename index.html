@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet"/>
 </head>
 <body>
+    <!-- Navbar -->
     <nav>
         <div class="nav-logo" onclick="showPage('home')">WINSIM <span>GYM</span></div>
         <div class="nav-links">
@@ -23,7 +24,10 @@
         </div>
     </nav>
 
+    <!-- homepage -->
     <div class="page active" id="page-home">
+
+        <!--  -->
         <div class="hero">
             <div>
                 <div class="hero-badge">NOW OPEN!</div>
@@ -41,6 +45,91 @@
                 <div class="stat-card"><div class="stat-num">3</div><div class="stat-label">Membership Tiers</div></div>
             </div>
         </div>
+
+        <!-- features -->
+
+        <div class="section-alt">
+            <div style="max-width:1240px;margin:0 auto">
+                <h2 class="section-title">Why WINSIM?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🏆</div>
+                        <div class="feature-title">Expert Coaching</div>
+                        <div class="feature-desc">Certified trainers with 6–10 years specialisation in strength, cardio, yoga, and combat sports.</div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📅</div>
+                        <div class="feature-title">Flexible Scheduling</div>
+                        <div class="feature-desc">Morning, midday, and evening classes across all disciplines — fit training into your life, not the other way.</div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <div class="feature-title">Progress Tracking</div>
+                        <div class="feature-desc">Your membership dashboard tracks classes attended, body metrics, and personal bests over time.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- plans -->
+        <div class="page" id="page-plans">
+            <div class="section">
+                <h1 class="section-title">Membership Plans</h1>
+                <p class="section-sub">Choose the plan that fits your goals. Cancel or upgrade anytime.</p>
+                <div class="plans-grid">
+
+                    <!-- Basic -->
+                    <div class="plan-card light">
+                        <div class="plan-tier">BASIC</div>
+                        <div class="plan-price">KES 2,500</div>
+                        <div class="plan-per">/ month</div>
+                        <ul class="plan-features">
+                        <li><span class="plan-check">✓</span> Gym floor access</li>
+                        <li><span class="plan-check">✓</span> Locker room</li>
+                        <li><span class="plan-check">✓</span> 2 group classes/week</li>
+                        <li><span class="plan-check">✓</span> Basic equipment</li>
+                        </ul>
+                        <button class="btn btn-dark btn-full" style="margin-top:28px" onclick="openRegister('basic')">Get Started</button>
+                    </div>
+
+                    <!-- Pro -->
+                    <div class="plan-card dark">
+                        <div class="plan-badge">MOST POPULAR</div>
+                        <div class="plan-tier">PRO</div>
+                        <div class="plan-price dark-text">KES 4,500</div>
+                        <div class="plan-per">/ month</div>
+                        <ul class="plan-features">
+                        <li class="dark-feat"><span class="plan-check">✓</span> Everything in Basic</li>
+                        <li class="dark-feat"><span class="plan-check">✓</span> Unlimited classes</li>
+                        <li class="dark-feat"><span class="plan-check">✓</span> 1 PT session/month</li>
+                        <li class="dark-feat"><span class="plan-check">✓</span> Nutrition guide</li>
+                        <li class="dark-feat"><span class="plan-check">✓</span> App access</li>
+                        </ul>
+                        <button class="btn btn-light btn-full" style="margin-top:28px" onclick="openRegister('pro')">Get Started</button>
+                    </div>
+
+                    <!-- Elite -->
+                    <div class="plan-card light">
+                        <div class="plan-tier">ELITE</div>
+                        <div class="plan-price">KES 8,000</div>
+                        <div class="plan-per">/ month</div>
+                        <ul class="plan-features">
+                        <li><span class="plan-check">✓</span> Everything in Pro</li>
+                        <li><span class="plan-check">✓</span> 4 PT sessions/month</li>
+                        <li><span class="plan-check">✓</span> Body composition analysis</li>
+                        <li><span class="plan-check">✓</span> Dedicated locker</li>
+                        <li><span class="plan-check">✓</span> Guest passes (2/mo)</li>
+                        </ul>
+                        <button class="btn btn-dark btn-full" style="margin-top:28px" onclick="openRegister('elite')">Get Started</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Schedules -->
+
+        
+        
     </div>
     
 </body>
