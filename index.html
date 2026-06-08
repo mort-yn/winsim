@@ -3,14 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Winsim</title>
+    <title>Winsim Gym</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet"/>
 </head>
 <body>
     <nav>
-        <ul>
-            <li></li>
-        </ul>
+        <div class="nav-logo" onclick="showPage('home')">WINSIM <span>GYM</span></div>
+        <div class="nav-links">
+            <button class="nav-link active" onclick="showPage('home')" id="nav-home">Home</button>
+            <button class="nav-link" onclick="showPage('plans')" id="nav-plans">Plans</button>
+            <button class="nav-link" onclick="showPage('schedule')" id="nav-schedule">Schedule</button>
+            <button class="nav-link" onclick="showPage('trainers')" id="nav-trainers">Trainers</button>
+            <button class="nav-link" onclick="showPage('contact')" id="nav-contact">Contact</button>
+        </div>
+        <div class="nav-actions" id="nav-actions">
+            <button class="btn btn-outline btn-sm" onclick="openModal('login')">Log In</button>
+            <button class="btn btn-dark btn-sm" onclick="openModal('register')">Join Now</button>
+        </div>
     </nav>
     
 </body>
