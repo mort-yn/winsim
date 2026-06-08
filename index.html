@@ -128,7 +128,73 @@
 
         <!-- Schedules -->
 
+        <div class="page" id="page-schedule">
+            <div class="section">
+                <h1 class="section-title">Class Schedule</h1>
+                <p class="section-sub">Book a spot — classes fill up fast.</p>
+                <div class="day-tabs" id="day-tabs">
+                    <button class="day-tab active" onclick="setDay('Mon',this)">Mon</button>
+                    <button class="day-tab" onclick="setDay('Tue',this)">Tue</button>
+                    <button class="day-tab" onclick="setDay('Wed',this)">Wed</button>
+                    <button class="day-tab" onclick="setDay('Thu',this)">Thu</button>
+                    <button class="day-tab" onclick="setDay('Fri',this)">Fri</button>
+                    <button class="day-tab" onclick="setDay('Sat',this)">Sat</button>
+                </div>
+                <div class="class-list" id="class-list"></div>
+            </div>
+        </div>
 
+        <!-- trianers -->
+
+        <div class="page" id="page-trainers">
+            <div class="section">
+                <h1 class="section-title">Our Trainers</h1>
+                <p class="section-sub">World-class coaches dedicated to your progress.</p>
+                <div class="trainers-grid">
+
+                <div class="trainer-card">
+                    <div class="trainer-avatar">🏃</div>
+                    <div>
+                        <div class="trainer-name">Amara Osei</div>
+                        <div class="trainer-role">HIIT & Cardio Coach</div>
+                        <p class="trainer-bio">Amara brings explosive energy to every session. Specialising in high-intensity training, she has helped hundreds of members reach peak cardiovascular fitness.</p>
+                        <div class="trainer-meta"><span>🕐 8 yrs experience</span><span>📋 ACE, NSCA</span></div>
+                    </div>
+                </div>
+
+                <div class="trainer-card">
+                    <div class="trainer-avatar">🧘</div>
+                    <div>
+                        <div class="trainer-name">Nadia Kimani</div>
+                        <div class="trainer-role">Yoga & Pilates Specialist</div>
+                        <p class="trainer-bio">With a background in dance and mindfulness, Nadia creates a seamless blend of strength and serenity in every class she leads.</p>
+                        <div class="trainer-meta"><span>🕐 6 yrs experience</span><span>📋 RYT-500, BASI</span></div>
+                    </div>
+                </div>
+
+                <div class="trainer-card">
+                    <div class="trainer-avatar">🏋️</div>
+                    <div>
+                        <div class="trainer-name">James Mwangi</div>
+                        <div class="trainer-role">Strength & Conditioning</div>
+                        <p class="trainer-bio">James is a former national powerlifter turned coach, obsessed with evidence-based programming for sustainable strength gains.</p>
+                        <div class="trainer-meta"><span>🕐 10 yrs experience</span><span>📋 CSCS, USAW</span></div>
+                    </div>
+                </div>
+
+                <div class="trainer-card">
+                    <div class="trainer-avatar">🥊</div>
+                    <div>
+                        <div class="trainer-name">Leo Njoroge</div>
+                        <div class="trainer-role">Boxing & Combat Sports</div>
+                        <p class="trainer-bio">Leo combines technical boxing fundamentals with functional fitness, making combat sports accessible and transformative for all levels.</p>
+                        <div class="trainer-meta"><span>🕐 7 yrs experience</span><span>📋 AIBA, NASM</span></div>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+        </div>
 
         <!-- contacts -->
 
@@ -138,29 +204,29 @@
                 <p class="section-sub">Questions about memberships, classes, or anything else? We'd love to hear from you.</p>
                 <div class="contact-grid">
 
-                <!-- Info -->
-                <div>
-                    <div class="contact-item">
-                    <div class="contact-icon">📍</div>
-                    <div><div class="contact-label">LOCATION</div><div class="contact-val">Westlands, Nairobi, Kenya</div></div>
-                    </div>
-                    <div class="contact-item">
-                    <div class="contact-icon">⏰</div>
-                    <div><div class="contact-label">HOURS</div><div class="contact-val">Mon–Fri 5:30am–10pm · Sat–Sun 7am–8pm</div></div>
-                    </div>
-                    <div class="contact-item">
-                    <div class="contact-icon">📞</div>
-                    <div><div class="contact-label">PHONE</div><div class="contact-val">+254 700 000 000</div></div>
-                    </div>
-                    <div class="contact-item">
-                    <div class="contact-icon">✉️</div>
-                    <div><div class="contact-label">EMAIL</div><div class="contact-val">hello@apexfit.co.ke</div></div>
-                    </div>
-                    <div style="margin-top:16px">
-                    <div class="db-pill">
-                        <div class="db-dot"></div>
-                        <span id="contact-count">0 messages received</span>
-                    </div>
+                    <!-- Info -->
+                    <div>
+                        <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div><div class="contact-label">LOCATION</div><div class="contact-val">Westlands, Nairobi, Kenya</div></div>
+                        </div>
+                        <div class="contact-item">
+                        <div class="contact-icon">⏰</div>
+                        <div><div class="contact-label">HOURS</div><div class="contact-val">Mon–Fri 5:30am–10pm · Sat–Sun 7am–8pm</div></div>
+                        </div>
+                        <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div><div class="contact-label">PHONE</div><div class="contact-val">+254 700 000 000</div></div>
+                        </div>
+                        <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div><div class="contact-label">EMAIL</div><div class="contact-val">hello@WINSIM.co.ke</div></div>
+                        </div>
+                        <div style="margin-top:16px">
+                        <div class="db-pill">
+                            <div class="db-dot"></div>
+                            <span id="contact-count">0 messages received</span>
+                        </div>
                     </div>
                 </div>
 
@@ -168,16 +234,16 @@
                 <div class="contact-form-card">
                     <div class="contact-form-title">Send a Message</div>
                     <div class="form-group">
-                    <label class="form-label">Your Name</label>
-                    <input class="form-input" id="c-name" placeholder="Jane Doe" />
+                        <label class="form-label">Your Name</label>
+                        <input class="form-input" id="c-name" placeholder="Jane Doe" />
                     </div>
                     <div class="form-group">
-                    <label class="form-label">Email Address</label>
-                    <input class="form-input" id="c-email" type="email" placeholder="jane@example.com" />
+                        <label class="form-label">Email Address</label>
+                        <input class="form-input" id="c-email" type="email" placeholder="jane@example.com" />
                     </div>
                     <div class="form-group">
-                    <label class="form-label">Message</label>
-                    <textarea class="form-textarea" id="c-msg" placeholder="Tell us what's on your mind…"></textarea>
+                        <label class="form-label">Message</label>
+                        <textarea class="form-textarea" id="c-msg" placeholder="Tell us what's on your mind…"></textarea>
                     </div>
                     <button class="btn btn-dark btn-full" onclick="handleContact()">Send Message</button>
                 </div>
@@ -185,12 +251,88 @@
                 </div>
             </div>
         </div>
-        
-    </div>
-    
-</body>
-<footer>
 
-</footer>
-<script src="index.js"></script>
+        
+        </div>
+        <!-- ═══ FOOTER ═══ -->
+        <footer>
+            <div class="footer-logo">APEX<span>FIT</span></div>
+            <p>© 2026 WINSIM Nairobi · All rights reserved</p>
+            <p id="footer-stats">0 members · 0 bookings</p>
+        </footer>
+
+        <!-- ═══ MODALS ═══ -->
+
+        <!-- Register -->
+        <div class="modal-overlay" id="modal-register" onclick="closeModalOutside(event,'modal-register')">
+            <div class="modal">
+                <button class="modal-close" onclick="closeModal('modal-register')">✕</button>
+                <div class="modal-title">Create Your Account</div>
+                <div class="modal-sub">Join WINSIM and start your fitness journey today.</div>
+                <div class="form-group">
+                    <label class="form-label">Full Name</label>
+                    <input class="form-input" id="r-name" placeholder="Jane Doe" />
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Email</label>
+                    <input class="form-input" id="r-email" type="email" placeholder="jane@example.com" />
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Password</label>
+                    <input class="form-input" id="r-pass" type="password" placeholder="Min 6 characters" />
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Membership Plan</label>
+                    <select class="form-select" id="r-plan">
+                        <option value="">Select a plan</option>
+                        <option value="basic">Basic — KES 2,500/mo</option>
+                        <option value="pro">Pro — KES 4,500/mo</option>
+                        <option value="elite">Elite — KES 8,000/mo</option>
+                    </select>
+                </div>
+                <button class="btn btn-dark btn-full" onclick="handleRegister()">Create Account</button>
+                <div class="modal-switch">Already a member? <a onclick="switchModal('modal-register','modal-login')">Log In</a></div>
+            </div>
+        </div>
+
+        <!-- Login -->
+        <div class="modal-overlay" id="modal-login" onclick="closeModalOutside(event,'modal-login')">
+            <div class="modal">
+                <button class="modal-close" onclick="closeModal('modal-login')">✕</button>
+                <div class="modal-title">Welcome Back</div>
+                <div class="modal-sub">Sign in to manage your bookings and membership.</div>
+                <div class="form-group">
+                    <label class="form-label">Email</label>
+                    <input class="form-input" id="l-email" type="email" placeholder="jane@example.com" />
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Password</label>
+                    <input class="form-input" id="l-pass" type="password" placeholder="Your password" />
+                </div>
+                <button class="btn btn-dark btn-full" onclick="handleLogin()">Log In</button>
+                <div class="modal-switch">New here? <a onclick="switchModal('modal-login','modal-register')">Create an Account</a></div>
+            </div>
+        </div>
+
+        <!-- Book prompt -->
+        <div class="modal-overlay" id="modal-book" onclick="closeModalOutside(event,'modal-book')">
+            <div class="modal">
+                <button class="modal-close" onclick="closeModal('modal-book')">✕</button>
+                <div class="modal-title">Book Your Spot</div>
+                <div class="modal-sub" id="modal-book-sub">You need an account to book this class.</div>
+                <div style="display:flex;gap:12px">
+                <button class="btn btn-dark" style="flex:1" onclick="switchModal('modal-book','modal-register')">Register</button>
+                <button class="btn btn-outline" style="flex:1" onclick="switchModal('modal-book','modal-login')">Log In</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Toast -->
+        <div id="toast">
+        <span id="toast-icon">✓</span>
+        <span id="toast-msg"></span>
+    </div>
+
+    <script src="app.js"></script>
+    </body>
 </html>
